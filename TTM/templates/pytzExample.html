@@ -1,0 +1,65 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <title>PresentTime</title>
+</head>
+<body>
+{% block body %}
+
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col order-last">
+      <h1>Top Vacation Destination</h1>
+        <h1>Current Time:</h1>
+        <br>
+        <div>
+<!--    <form method="post" action="{% url 'RandomOtp' %}">-->
+<!--        {%csrf_token%}-->
+<!--        <label>Enter Text:</label>-->
+<!--        <input type="text" name="input1" required>-->
+<!--        <button type="submit" style="background-color:blue">Submit</button>-->
+<!--    </form>-->
+</div>
+
+
+
+
+
+    </div>
+    <div class="col">
+      <h1>The present Time in other country is:</h1>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select any country
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Africa/juba</a></li>
+    <li><a class="dropdown-item" href="#">America/chicago</a></li>
+    <li><a class="dropdown-item" href="#">Asia/Dubai</a></li>
+      <li><a class="dropdown-item" href="#">Antartica/Troll</a></li>
+  </ul>
+</div>
+        <br><br><br>
+    <div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button">Button</button>
+</div>
+        <h1>
+        {{ current_time}}
+
+        </h1>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+</body>
+</html>>
